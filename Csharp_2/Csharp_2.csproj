@@ -43,6 +43,9 @@
     <Compile Include="Day_2\Controls_Else_If_5.cs" />
     <Compile Include="Day_2\Controls_IF_Else_4.cs" />
     <Compile Include="Day_2\Controls_Switch_6.cs" />
+    <Compile Include="Day_3\CombainAllSystems_8.cs" />
+    <Compile Include="Day_3\Function_10\Functions10_1.cs" />
+    <Compile Include="Day_3\Loops_9.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

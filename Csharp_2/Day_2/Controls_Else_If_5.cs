@@ -165,16 +165,18 @@ namespace Csharp_2.Day_2
         //        Console.WriteLine($"Patient Height is : {height} M ");
         //        Console.WriteLine($"Patient Weight is : {weight} K.g");
         //        Console.WriteLine("Bmi : " + bmi);
-
-        //        if (bmi >= 25)
-        //        {
-        //            Console.WriteLine("Over Weight.");
-        //        }
-        //        else
-        //        {
-        //            Console.WriteLine("Normal Weight".);
+        //    if (Bmi > 18.5 )
+        //    { Console.WriteLine("Underweight"); }
+        //    else if (Bmi >25)
+        //    { Console.WriteLine("Normal Weight"); }
+        //    else if (Bmi > 30)
+        //    { Console.WriteLine("Overweight"); }
+        //     else
+        //    {
+        //    Console.WriteLine("Obese");
+        //    }
         //        }
         //    }
 
-            }
+    }
 }
