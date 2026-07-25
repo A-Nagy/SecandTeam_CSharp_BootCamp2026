@@ -4,21 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Csharp_2.Day_3.Function_1
+namespace Csharp_2.Day_3.Function_11
 {
-     class Functions10_1
+     class Functions_11_2
     {
-        //static void Main(string[] args)
-        //{
-        //    EmployeeSalayInfo();
-        //    StudentGradeChecker();  
-        //    BMI_Calcuator();
-
-        //}
-        // function ==>  static ==  void  
-        static void EmployeeSalayInfo() 
-        { 
-            //declare variable
+      public  static void EmployeeSalayInfo()
+        {
+           // declare variable
             string employeeName;
             double monthlySalary;
             double annualSalary;
@@ -38,9 +30,9 @@ namespace Csharp_2.Day_3.Function_1
             Console.WriteLine("===============================");
             Console.WriteLine("Task 1: Employee Salary Info");
             Console.WriteLine("===============================");
-            Console.WriteLine("Employee Name: " + employeeName);
+            Console.WriteLine("Employee Name: "  + employeeName);
             Console.WriteLine("Monthly Salary: " + monthlySalary);
-            Console.WriteLine("Annual Salary: " + annualSalary);
+            Console.WriteLine("Annual Salary: "  + annualSalary);
 
             if (monthlySalary >= 15000)
             {
@@ -61,9 +53,9 @@ namespace Csharp_2.Day_3.Function_1
             }
 
         }
-        static void StudentGradeChecker() 
+      public  static void StudentGradeChecker()
         {
-           
+
 
             //1.declare variables for student name, obtained mark, full mark, and percentage
             string studentName;
@@ -100,9 +92,9 @@ namespace Csharp_2.Day_3.Function_1
             { Console.WriteLine("Grade: Failed"); }
 
         }
-        static void BMI_Calcuator() 
+      public  static void BMI_Calcuator()
         {
-             
+
             //declare variable 
             string PatientName;
             double height;
@@ -136,6 +128,6 @@ namespace Csharp_2.Day_3.Function_1
                 Console.WriteLine("Obese");
             }
         }
+
     }
 }
- 

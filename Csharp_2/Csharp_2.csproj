@@ -45,6 +45,8 @@
     <Compile Include="Day_2\Controls_Switch_6.cs" />
     <Compile Include="Day_3\CombainAllSystems_8.cs" />
     <Compile Include="Day_3\Function_10\Functions10_1.cs" />
+    <Compile Include="Day_3\Function_11\Functions_11_2.cs" />
+    <Compile Include="Day_3\Function_11\Player_11_1.cs" />
     <Compile Include="Day_3\Loops_9.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
