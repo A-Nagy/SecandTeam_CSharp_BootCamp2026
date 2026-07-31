@@ -48,6 +48,14 @@
     <Compile Include="Day_3\Function_11\Functions_11_2.cs" />
     <Compile Include="Day_3\Function_11\Player_11_1.cs" />
     <Compile Include="Day_3\Loops_9.cs" />
+    <Compile Include="Day_4\DashBoardNewVirson\EmployeeClass.cs" />
+    <Compile Include="Day_4\DashBoardNewVirson\MainClass.cs" />
+    <Compile Include="Day_4\FirstVersionCalc\AllInOne.cs" />
+    <Compile Include="Day_4\ReturnArray\employeeSumary.cs" />
+    <Compile Include="Day_4\SecandVersionCalc\MainClass.cs" />
+    <Compile Include="Day_4\ThirdVersionCalc\AllFunction.cs" />
+    <Compile Include="Day_4\ThirdVersionCalc\RunApp.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
