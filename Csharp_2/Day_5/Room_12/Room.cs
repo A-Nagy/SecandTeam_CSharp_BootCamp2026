@@ -18,9 +18,32 @@ namespace Csharp_2.Day_5.Room_12
         //Fields are Variables that are declared directly in a class.
         //Fields can be of any type .
         //Fields are used to store data for the class.
-        public double _length;
-        public double _width;
-        public double _height;
+         double _length;
+         double _width;
+         double _height;
+
+        //Properties:
+        //Properties are special methods that are used to
+        // encapsulate the fields of a class.
+        // Properties have a get and set accessor
+        // that allows you to
+        // get and set the value of the field.
+        public double Length
+        {
+            get { return _length ; }
+            set { _length = value <= 0 ? 0 : value; }  
+        }
+        public double Width 
+        {
+            get { return _width; }
+            set { _width = value <= 0 ? 0 : value; }
+        }
+        public double Height
+        {
+            get { return _height; }
+            set { _height = value <= 0 ? 0 : value; }
+        }
+
 
         //Constructors:
         // Constructors are special methods that are used to
@@ -33,19 +56,19 @@ namespace Csharp_2.Day_5.Room_12
             //{
             //    throw new ArgumentException("Length, Width, and Height must be positive values.");
             //}
-            //else 
+            //else
             //{
-                _length = length;
-                _width  = width;
-                _height = height;
+                Length  = length;
+                Width   = width;
+                Height  = height;
             //}
-               
+
         }
- 
+
         //Functions
         public double GetVolume()
         {
-            return _length * _width ;
+            return Length * Width ;
         }
 
     }

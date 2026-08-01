@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Csharp_2.Day_5.Employee_13
+﻿namespace Csharp_2.Day_5.Employee_13
 {
      class Employee
     {
@@ -17,22 +11,34 @@ namespace Csharp_2.Day_5.Employee_13
              - `GetAnnualSalaryLevel()` → returns salary level based on computed annual salary
          */
 
-        //Fields
-        public string _name;
-        public double _salary;
+        ////Fields
+        private string _name;
+        private double _salary;
+
+        //properties
+        public string Name
+        {
+            get => _name; 
+            set => _name = value.Equals(null)?"No Name ":value; 
+        }
+        public double Salary
+        {
+          get => _salary ;
+          set => _salary = value<2000?2500:value;
+        }
 
         //Constructor
         public Employee(string name , double salary)
         {
-            _name   = name;
-            _salary = salary;
+            Name   = name;
+            Salary = salary;
         }
 
         //Functions
         // ✅ الطريقة الثانية: تعتمد على الخصائص الداخلية للكائن
         public double CalculateAnnualSalary()
         {
-            return _salary * 12;
+            return Salary * 12;
         }
         public string GetAnnualSalaryLevel()
         {

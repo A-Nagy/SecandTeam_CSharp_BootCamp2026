@@ -16,15 +16,25 @@ namespace Csharp_2.Day_5.Patient_15
 
       */
         //Fields
-        public string _name;
-        public double _height;
-        public double _weight;
-        //Constructor
+         string _name;
+         double _height;
+         double _weight;
+        //Properties
+        public string Name { get => _name; set => _name = value; }
+        public double Height { get => _height; set => _height = value; }
+        public double Weight { get => _weight; set => _weight = value; }
 
+        //Constructor
+        public Patient(string name, double height, double weight)
+        {
+            Name   = name;
+            Height = height;
+            Weight = weight;
+        }
         //Functions
         public double GetBMI()
         {
-            return _weight / (_height * _height);
+            return Weight / (Height * Height);
         }
         public string GetBodyStatus()
         {

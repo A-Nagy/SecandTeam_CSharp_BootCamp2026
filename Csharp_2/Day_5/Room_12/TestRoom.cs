@@ -10,15 +10,15 @@ namespace Csharp_2.Day_5.Room_12
     {
         //static void Main(string[] args)
         //{
-        //    Room room = new Room(3,4,2.5);
+        //    Room room = new Room(3, 4, 2.5);
 
-        //    //room._length = 3;
-        //    //room._width  = 4;
-        //    //room._height = 2.5;
+        //    room.Length = -1;
+        //    room.Width = 4;
+        //    room.Height = 2.5;
 
-        //    Console.WriteLine($"The Length Of the Rome is :{room._length} ");
-        //    Console.WriteLine($"The Width  Of the Rome is :{room._width} ");
-        //    Console.WriteLine($"The Height Of the Rome is :{room._height} ");
+        //    Console.WriteLine($"The Length Of the Rome is :{room.Length} ");
+        //    Console.WriteLine($"The Width  Of the Rome is :{room.Width} ");
+        //    Console.WriteLine($"The Height Of the Rome is :{room.Height} ");
         //    Console.WriteLine($"The volume of the room is :{room.GetVolume()}");
         //}
     }

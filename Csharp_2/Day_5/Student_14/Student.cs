@@ -17,23 +17,41 @@ namespace Csharp_2.Day_5.Student_14
          */
 
         //Fields
-        public string _name;
-        public double _mark;
-        public double _fullMark;
+         string _name;
+         double _mark;
+         double _fullMark;
+
+        //Properties
+        public string Name
+        {
+            get { return _name; }
+            set { _name = value; }
+        }
+        public double Mark
+        {
+            get { return _mark; }
+            set { _mark = value; }
+        }
+        public double FullMark
+        {
+            get { return _fullMark; }
+            set { _fullMark = value; }
+        }
+
 
         //Constructor
         public Student(string name , double mark , double fullmark)
         {
-            _name = name;
-            _mark = mark;
-            _fullMark = fullmark;
+            Name = name;
+            Mark = mark;
+            FullMark = fullmark;
 
         }
 
         //Functions
         public double GetPercentage()
         {
-            return (_mark / _fullMark) * 100;
+            return (Mark / FullMark) * 100;
         }
         public string GetGrade()
         {

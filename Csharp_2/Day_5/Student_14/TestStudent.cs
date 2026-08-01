@@ -11,24 +11,24 @@ namespace Csharp_2.Day_5.Student_14
     {
         //static void Main(string[] args)
         //{
-        //    string name     = "John Doe";
-        //    double mark     = 85;
+        //    string name = "John Doe";
+        //    double mark = 85;
         //    double fullMark = 100;
 
         //    Student student = new Student(name, mark, fullMark);
 
-        //    student._name = "Soltan";
-        //    student._mark = 95;
-        //    student._fullMark = 100;
+        //    student.Name = "Soltan";
+        //    student.Mark = 95;
+        //    student.Mark = 100;
 
-        //    Console.WriteLine($"Student Name : {student._name}");
-        //    Console.WriteLine($"Mark         : {student._mark}");
-        //    Console.WriteLine($"Full Mark    : {student._fullMark}");
+        //    Console.WriteLine($"Student Name : {student.Name}");
+        //    Console.WriteLine($"Mark         : {student.Mark}");
+        //    Console.WriteLine($"Full Mark    : {student.FullMark}");
         //    Console.WriteLine($"Percentage   : {student.GetPercentage()}%");
         //    Console.WriteLine($"Grade        : {student.GetGrade()}");
 
 
-
         //}
+        
     }
 }
