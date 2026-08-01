@@ -50,11 +50,21 @@
     <Compile Include="Day_3\Loops_9.cs" />
     <Compile Include="Day_4\DashBoardNewVirson\EmployeeClass.cs" />
     <Compile Include="Day_4\DashBoardNewVirson\MainClass.cs" />
+    <Compile Include="Day_4\DashBoardNewVirson\PatientClass.cs" />
+    <Compile Include="Day_4\DashBoardNewVirson\StudentClass.cs" />
     <Compile Include="Day_4\FirstVersionCalc\AllInOne.cs" />
     <Compile Include="Day_4\ReturnArray\employeeSumary.cs" />
     <Compile Include="Day_4\SecandVersionCalc\MainClass.cs" />
     <Compile Include="Day_4\ThirdVersionCalc\AllFunction.cs" />
     <Compile Include="Day_4\ThirdVersionCalc\RunApp.cs" />
+    <Compile Include="Day_5\Employee_13\Employee.cs" />
+    <Compile Include="Day_5\Employee_13\TestEmployee.cs" />
+    <Compile Include="Day_5\Patient_15\Patient.cs" />
+    <Compile Include="Day_5\Patient_15\TestPaient.cs" />
+    <Compile Include="Day_5\Room_12\Room.cs" />
+    <Compile Include="Day_5\Room_12\TestRoom.cs" />
+    <Compile Include="Day_5\Student_14\Student.cs" />
+    <Compile Include="Day_5\Student_14\TestStudent.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

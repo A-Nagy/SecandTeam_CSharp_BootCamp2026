@@ -8,156 +8,94 @@ namespace Csharp_2.Day_4.DashBoardNewVirson
 {
      class MainClass
     {
-        static void Main(string[] args)
-        {
+        //static void Main(string[] args)
+        //{
            
-            int CH;
-            do
-            {
-                Console.WriteLine("Welcome To Our New System \nPls CHoose System Number 1-4");
-                Console.WriteLine();
-                Console.WriteLine(" 1. Employee Salary Info \n" +
-                                  " 2. Student Grade Checker \n" +
-                                  " 3. BMI Calculator \n" +
-                                  " 4. Month's Days Counter \n" +
-                                  " 5. Exit");
-                  CH = Convert.ToInt32(Console.ReadLine());
+        //    int CH;
+        //    do
+        //    {
+        //        Console.WriteLine("Welcome To Our New System \nPls CHoose System Number 1-4");
+        //        Console.WriteLine();
+        //        Console.WriteLine(" 1. Employee Salary Info \n" +
+        //                          " 2. Student Grade Checker \n" +
+        //                          " 3. BMI Calculator \n" +
+        //                          " 4. Exit");
+        //          CH = Convert.ToInt32(Console.ReadLine());
 
-                switch (CH)
-                {
+        //        switch (CH)
+        //        {
           
-                    case 1:
-                        EmployeeClass empObj = new EmployeeClass();
-                        empObj. PrintEmployeePaner();
+        //            case 1:
 
-                        Console.WriteLine("Enter your name:");
-                     string employeeName = Console.ReadLine();
+        //                EmployeeClass empObj = new EmployeeClass();
+        //                empObj. PrintEmployeePaner();
 
-                        Console.WriteLine("Enter your monthly salary:");
-                     double monthlySalary = Convert.ToDouble(Console.ReadLine());
+        //                Console.WriteLine("Enter your name:");
+        //             string employeeName = Console.ReadLine();
 
-                        string[] Summary = empObj. GetEmployeeSummary(employeeName, monthlySalary);
+        //                Console.WriteLine("Enter your monthly salary:");
+        //             double monthlySalary = Convert.ToDouble(Console.ReadLine());
+
+        //                string[] EmpSummary = empObj. GetEmployeeSummary(employeeName, monthlySalary);
                        
-                        foreach (string s in Summary)
-                            Console.WriteLine(s);
+        //                foreach (string s in EmpSummary)
+        //                    Console.WriteLine(s);
 
-                        break;
+        //                break;
+        //            case 2:
 
-                    case 2:
-                        Console.WriteLine("===============================");
-                        Console.WriteLine("Task 2: Student Percentage");
-                        Console.WriteLine("===============================");
-                        //1.declare variables for student name, obtained mark, full mark, and percentage
-                        string studentName;
-                        double Mark;
-                        double FullMark;
-                        double percentage;
-                        //2.Prompt the user to enter their name, obtained mark, and full mark
-                        //inputs
-                        Console.WriteLine("Enter your name:");
-                        studentName = Console.ReadLine();
-                        Console.WriteLine("Enter your  mark:");
-                        Mark = Convert.ToDouble(Console.ReadLine());
-                        Console.WriteLine("Enter your full mark:");
-                        FullMark = Convert.ToDouble(Console.ReadLine());
-                        //3.Calculate the percentage
-                        percentage = (Mark / FullMark) * 100;
-                        //4.Display the student's name, obtained mark, full mark, and percentage
+        //                StudentClass Stobj = new StudentClass();
 
-                        Console.WriteLine("Student Name: " + studentName);
-                        Console.WriteLine("Obtained Mark: " + Mark);
-                        Console.WriteLine("Full Mark: " + FullMark);
-                        Console.WriteLine("Percentage: " + percentage + "%");
-                        if (percentage >= 85)
-                        { Console.WriteLine("Grade: Excellent"); }
-                        else if (percentage >= 75)
-                        { Console.WriteLine("Grade: Very Good"); }
-                        else if (percentage >= 65)
-                        { Console.WriteLine("Grade: Good"); }
-                        else if (percentage >= 50)
-                        { Console.WriteLine("Grade: Pass"); }
-                        else
-                        { Console.WriteLine("Grade: Failed"); }
-                        break;
-                    case 3:
-                        //declare variable 
-                        string PatientName;
-                        double height;
-                        double weight;
-                        double bmi;
+        //                Stobj.PrintStudentPanner();
 
-                        //input from user 
-                        Console.WriteLine("pls enter your Name ");
-                        PatientName = Console.ReadLine();
-                        Console.WriteLine("pls Enter Your height");
-                        height = Convert.ToDouble(Console.ReadLine());
-                        Console.WriteLine("pls Enter Your Weight");
-                        weight = Convert.ToDouble(Console.ReadLine());
+        //                Console.WriteLine("Enter Student name:");
+        //                string stname = Console.ReadLine();
 
-                        //calculate Bmi 
-                        bmi = weight / (height * height);
+        //                Console.WriteLine("Enter Student Mark:");
+        //                double stmark = Convert.ToDouble(Console.ReadLine());
 
-                        //Display Result 
-                        Console.WriteLine("Patient Name is : " + PatientName);
-                        Console.WriteLine($"Patient Height is : {height} M ");
-                        Console.WriteLine($"Patient Weight is : {weight} K.g");
-                        Console.WriteLine("Bmi : " + bmi);
-                        if (bmi < 18.5)
-                        { Console.WriteLine("Underweight"); }
-                        else if (bmi < 25)
-                        { Console.WriteLine("Normal Weight"); }
-                        else if (bmi < 30)
-                        { Console.WriteLine("Overweight"); }
-                        else
-                        {
-                            Console.WriteLine("Obese");
-                        }
+        //                Console.WriteLine("Enter Full Mark");
+        //                double fullmark = Convert.ToDouble(Console.ReadLine());
 
-                        break;
-                    case 4:
-                        Console.WriteLine("pls Enter Number OF Month ");
-                        int m_num = Convert.ToInt32(Console.ReadLine());
+        //                string[] StSummary = Stobj.GetStudentSummary(stname,stmark,fullmark);
 
-                        switch (m_num)
-                        {
-                            case 1:
-                            case 3:
-                            case 5:
-                            case 7:
-                            case 8:
-                            case 10:
-                            case 12:
-                                Console.WriteLine("31 days ");
-                                break;
-                            case 6:
-                            case 4:
-                            case 9:
-                            case 11:
-                                Console.WriteLine("30 days ");
-                                break;
-                            case 2:
-                                Console.WriteLine("28 or 29 days depending on leap year ");
-                                break;
-                            default:
-                                Console.WriteLine("invalid number");
-                                break;
-                        }
-                        break;
-                    case 5:
-                        Console.WriteLine("Exit");
-                        break;
-                    default:
-                        Console.WriteLine("Invalied Number");
-                        break;
+        //                foreach (string s in StSummary)
+        //                    Console.WriteLine(s);
 
-                }
-            } while (CH != 5);
+        //                break;
+        //            case 3:
+
+        //                PatientClass Pobj = new PatientClass();
+        //                Pobj.PrintPatientPanner();
+
+        //                Console.WriteLine("pls enter your Name ");
+        //               string PatientName = Console.ReadLine();
+        //                Console.WriteLine("pls Enter Your height");
+        //               double height = Convert.ToDouble(Console.ReadLine());
+        //                Console.WriteLine("pls Enter Your Weight");
+        //               double weight = Convert.ToDouble(Console.ReadLine());
+
+        //                string[] PatientSummary = Pobj.GetPatientSummary(PatientName, height, weight);
+        //                foreach (string s in PatientSummary)
+        //                 Console.WriteLine(s);
+
+        //                break;
+
+        //            case 4:
+        //                Console.WriteLine("Exit");
+        //                break;
+        //            default:
+        //                Console.WriteLine("Invalied Number");
+        //                break;
+
+        //        }
+        //    } while (CH != 5);
 
 
-        }
+        //}
+
 
        
-        static void Student_Grade_Checker() { }
-        static void BMI_Calculator() { }
+      
     }
 }
