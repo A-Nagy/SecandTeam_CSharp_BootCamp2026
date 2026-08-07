@@ -34,48 +34,64 @@
             Salary = salary;
         }
 
-        //Functions
-        // ✅ الطريقة الثانية: تعتمد على الخصائص الداخلية للكائن
-        public double CalculateAnnualSalary()
+        public virtual double GetNetSalary() 
         {
-            return Salary * 12;
-        }
-        public string GetAnnualSalaryLevel()
-        {
-            double annualSalary = CalculateAnnualSalary();
-            if (annualSalary < 30000)
-            {
-                return "Low";
-            }
-            else if (annualSalary >= 30000 && annualSalary < 60000)
-            {
-                return "Medium";
-            }
-            else
-            {
-                return "High";
-            }
+            return Salary;
         }
 
-        // ✅ الطريقة الاولي: تعتمد على قيمة تمرر لها (parameter)
-        public string GetAnnualSalaryLevel(double annualSalary)
-        {
-            if (annualSalary < 30000)
-            {
-                return "Low";
-            }
-            else if (annualSalary >= 30000 && annualSalary < 60000)
-            {
-                return "Medium";
-            }
-            else
-            {
-                return "High";
-            }
-        }
-        public double CalculateAnnualSalary(double salary)
-        {
-            return salary * 12;
-        }
+ 
+
+
+
+
+
+
+
+
+
+
+        ////Functions
+        //// ✅ الطريقة الثانية: تعتمد على الخصائص الداخلية للكائن
+        //public double CalculateAnnualSalary()
+        //{
+        //    return Salary * 12;
+        //}
+        //public string GetAnnualSalaryLevel()
+        //{
+        //    double annualSalary = CalculateAnnualSalary();
+        //    if (annualSalary < 30000)
+        //    {
+        //        return "Low";
+        //    }
+        //    else if (annualSalary >= 30000 && annualSalary < 60000)
+        //    {
+        //        return "Medium";
+        //    }
+        //    else
+        //    {
+        //        return "High";
+        //    }
+        //}
+
+        //// ✅ الطريقة الاولي: تعتمد على قيمة تمرر لها (parameter)
+        //public string GetAnnualSalaryLevel(double annualSalary)
+        //{
+        //    if (annualSalary < 30000)
+        //    {
+        //        return "Low";
+        //    }
+        //    else if (annualSalary >= 30000 && annualSalary < 60000)
+        //    {
+        //        return "Medium";
+        //    }
+        //    else
+        //    {
+        //        return "High";
+        //    }
+        //}
+        //public double CalculateAnnualSalary(double salary)
+        //{
+        //    return salary * 12;
+        //}
     }
 }
