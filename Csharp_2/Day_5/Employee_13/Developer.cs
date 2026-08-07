@@ -8,13 +8,6 @@ namespace Csharp_2.Day_5.Employee_13
 {
     class Developer : Employee
     {
-        /*
-         
-         `OvertimeHours`, `HourlyRate`
-         
-         GetNetSalary()` → Salary + Overtime earnings
-         
-         */
         public double HourlyRate { get; set; }
         public double OvertimeHours { get; set; }
         public Developer(string name, double salary, double hourlyRate, double overtimeHours) 
@@ -23,7 +16,6 @@ namespace Csharp_2.Day_5.Employee_13
             HourlyRate = hourlyRate;
             OvertimeHours = overtimeHours;
         }
-
         public override double GetNetSalary()
         {
             //return base.GetNetSalary() + (HourlyRate * OvertimeHours);

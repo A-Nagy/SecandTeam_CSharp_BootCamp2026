@@ -1,6 +1,6 @@
 ﻿namespace Csharp_2.Day_5.Employee_13
 {
-     class Employee
+     class Employee:Person
     {
         /*
          * 2. **Employee**
@@ -12,15 +12,11 @@
          */
 
         ////Fields
-        private string _name;
+   
         private double _salary;
 
         //properties
-        public string Name
-        {
-            get => _name; 
-            set => _name = value.Equals(null)?"No Name ":value; 
-        }
+ 
         public double Salary
         {
           get => _salary ;
@@ -28,9 +24,9 @@
         }
 
         //Constructor
-        public Employee(string name , double salary)
+        public Employee(string name , double salary) : base(name)
         {
-            Name   = name;
+            
             Salary = salary;
         }
 
@@ -39,13 +35,18 @@
             return Salary;
         }
 
+        public override string GetInfo()
+        {
+             return $"Employee Name : {Name} \n" +
+                    $"Employee Salary : {Salary} \n" +
+                    $"Employee Net Salary : {GetNetSalary()}\n ";
+        }
+
+
+
+
+
  
-
-
-
-
-
-
 
 
 

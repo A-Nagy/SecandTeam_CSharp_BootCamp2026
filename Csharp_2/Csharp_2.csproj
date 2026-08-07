@@ -57,6 +57,10 @@
     <Compile Include="Day_4\SecandVersionCalc\MainClass.cs" />
     <Compile Include="Day_4\ThirdVersionCalc\AllFunction.cs" />
     <Compile Include="Day_4\ThirdVersionCalc\RunApp.cs" />
+    <Compile Include="Day_5\Abstract_Explain_16\Circle.cs" />
+    <Compile Include="Day_5\Abstract_Explain_16\Rectangle.cs" />
+    <Compile Include="Day_5\Abstract_Explain_16\Shape.cs" />
+    <Compile Include="Day_5\Abstract_Explain_16\Test.cs" />
     <Compile Include="Day_5\Employee_13\Accountant.cs" />
     <Compile Include="Day_5\Employee_13\Developer.cs" />
     <Compile Include="Day_5\Employee_13\Employee.cs" />
@@ -64,6 +68,7 @@
     <Compile Include="Day_5\Employee_13\TestEmployee.cs" />
     <Compile Include="Day_5\Patient_15\Patient.cs" />
     <Compile Include="Day_5\Patient_15\TestPaient.cs" />
+    <Compile Include="Day_5\Person.cs" />
     <Compile Include="Day_5\Room_12\Room.cs" />
     <Compile Include="Day_5\Room_12\TestRoom.cs" />
     <Compile Include="Day_5\Student_14\Student.cs" />

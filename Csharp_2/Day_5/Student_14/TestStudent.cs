@@ -26,9 +26,10 @@ namespace Csharp_2.Day_5.Student_14
         //    Console.WriteLine($"Full Mark    : {student.FullMark}");
         //    Console.WriteLine($"Percentage   : {student.GetPercentage()}%");
         //    Console.WriteLine($"Grade        : {student.GetGrade()}");
+        //    Console.WriteLine(student.GetInfo());
 
 
         //}
-        
+
     }
 }

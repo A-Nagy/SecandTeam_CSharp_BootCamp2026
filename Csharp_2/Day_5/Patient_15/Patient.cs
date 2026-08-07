@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Csharp_2.Day_5.Patient_15
 {
-    internal class Patient
+    internal class Patient : Person
     {/*
       * **Patient**
         - Properties: `Name`, `Height`, `Weight`
@@ -16,18 +16,18 @@ namespace Csharp_2.Day_5.Patient_15
 
       */
         //Fields
-         string _name;
+       
          double _height;
          double _weight;
         //Properties
-        public string Name { get => _name; set => _name = value; }
+     
         public double Height { get => _height; set => _height = value; }
         public double Weight { get => _weight; set => _weight = value; }
 
         //Constructor
-        public Patient(string name, double height, double weight)
+        public Patient(string name, double height, double weight): base(name)
         {
-            Name   = name;
+      
             Height = height;
             Weight = weight;
         }
@@ -56,6 +56,17 @@ namespace Csharp_2.Day_5.Patient_15
             {
                 return "Obesity";
             }
+        }
+
+        public override string GetInfo()
+        {
+       
+            return $"Patient Name : {Name} \n" +
+                    $"Patient Height : {Height} \n" +
+                    $"Patient Weight : {Weight}\n " +
+                    $"Patient BMI : {GetBMI()}\n" +
+                    $"Patient Body Status  : {GetBodyStatus()} ";
+        
         }
     }
 }

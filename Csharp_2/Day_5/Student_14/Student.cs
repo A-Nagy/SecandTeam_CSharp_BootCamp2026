@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Csharp_2.Day_5.Student_14
 {
-     class Student
+     class Student : Person
     {
         /*
          * **Student**
@@ -17,16 +17,12 @@ namespace Csharp_2.Day_5.Student_14
          */
 
         //Fields
-         string _name;
+ 
          double _mark;
          double _fullMark;
 
         //Properties
-        public string Name
-        {
-            get { return _name; }
-            set { _name = value; }
-        }
+       
         public double Mark
         {
             get { return _mark; }
@@ -40,9 +36,9 @@ namespace Csharp_2.Day_5.Student_14
 
 
         //Constructor
-        public Student(string name , double mark , double fullmark)
+        public Student(string name , double mark , double fullmark) : base(name)
         {
-            Name = name;
+   
             Mark = mark;
             FullMark = fullmark;
 
@@ -77,6 +73,14 @@ namespace Csharp_2.Day_5.Student_14
             {
                 return "F";
             }
+        }
+
+        public override string GetInfo()
+        {
+            return $"Student Name : {Name} \n" +
+                    $"Student Mark : {Mark} \n" +
+                    $"Student Percentage : {GetPercentage()}\n " +
+                    $"Student Grade : {GetGrade()}";
         }
     }
 }
