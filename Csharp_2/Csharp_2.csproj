@@ -70,12 +70,19 @@
     <Compile Include="Day_5\Patient_15\Patient.cs" />
     <Compile Include="Day_5\Patient_15\TestPaient.cs" />
     <Compile Include="Day_5\Person.cs" />
+    <Compile Include="Day_5\Review\Review.cs" />
     <Compile Include="Day_5\Room_12\Room.cs" />
     <Compile Include="Day_5\Room_12\TestRoom.cs" />
     <Compile Include="Day_5\Student_14\Student.cs" />
     <Compile Include="Day_5\Student_14\TestStudent.cs" />
     <Compile Include="Day_5\Task1EmplyeeSystem\EmployeeSysstem.cs" />
+    <Compile Include="Day_5\Task2_StudentSystem\StudentSystem.cs" />
+    <Compile Include="Day_5\Task3PaitentSystem\Task3PatientSystem.cs" />
+    <Compile Include="Day_6\ConnectDatatBase.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

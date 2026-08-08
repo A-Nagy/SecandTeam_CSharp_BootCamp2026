@@ -8,24 +8,24 @@ namespace Csharp_2.Day_5.Task1EmplyeeSystem
 {
      class EmployeeSysstem
     {
-        static void Main(string[] args) 
-        {
-            /*
-             * 
-       Employee System
-- Create an **abstract class** `EmployeeBase` with:
-  - Properties: `Name`, `MonthlySalary`
-  - Abstract Method: `CalculateAnnualSalary()`
-- Create an **interface** `ISalaryLevel` with:
-  - Method: `GetSalaryLevel(double annualSalary)`
-- Implement a class `Employee` that inherits from `EmployeeBase` and implements `ISalaryLevel`.
+//        static void Main(string[] args) 
+//        {
+//            /*
+//             * 
+//       Employee System
+//- Create an **abstract class** `EmployeeBase` with:
+//  - Properties: `Name`, `MonthlySalary`
+//  - Abstract Method: `CalculateAnnualSalary()`
+//- Create an **interface** `ISalaryLevel` with:
+//  - Method: `GetSalaryLevel(double annualSalary)`
+//- Implement a class `Employee` that inherits from `EmployeeBase` and implements `ISalaryLevel`.
 
-             */
+//             */
 
-            Employee emp = new Employee("Test",18000);
-            Console.WriteLine(emp.GetSalaryLevel(emp.CalculateAnnualSalary()));
+//            Employee emp = new Employee("Test",18000);
+//            Console.WriteLine(emp.GetSalaryLevel(emp.CalculateAnnualSalary()));
 
-        }
+//        }
     }
     public abstract class EmployeeBase 
     {
