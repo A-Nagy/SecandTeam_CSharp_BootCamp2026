@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Csharp_2.Day_5.Patient_15
 {
-    internal class Patient : Person
+    internal class Patient : Person,IPrintable
     {/*
       * **Patient**
         - Properties: `Name`, `Height`, `Weight`
@@ -67,6 +67,15 @@ namespace Csharp_2.Day_5.Patient_15
                     $"Patient BMI : {GetBMI()}\n" +
                     $"Patient Body Status  : {GetBodyStatus()} ";
         
+        }
+
+        public void PrintDetails()
+        {
+           Console.WriteLine($"Patient Name : {Name} \n" +
+                               $"Patient Height : {Height} \n" +
+                    $"Patient Weight : {Weight}\n " +
+                    $"Patient BMI : {GetBMI()}\n" +
+                    $"Patient Body Status  : {GetBodyStatus()} ");
         }
     }
 }

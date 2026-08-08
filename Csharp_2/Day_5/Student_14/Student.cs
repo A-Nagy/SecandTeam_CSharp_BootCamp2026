@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Csharp_2.Day_5.Student_14
 {
-     class Student : Person
+     class Student : Person , IPrintable
     {
         /*
          * **Student**
@@ -81,6 +81,14 @@ namespace Csharp_2.Day_5.Student_14
                     $"Student Mark : {Mark} \n" +
                     $"Student Percentage : {GetPercentage()}\n " +
                     $"Student Grade : {GetGrade()}";
+        }
+
+        public void PrintDetails()
+        { 
+            Console.WriteLine($"Student Name       : {Name} \n" +
+                              $"Student Mark       : {Mark} \n" +
+                              $"Student Percentage : {GetPercentage()}\n " +
+                              $"Student Grade      : {GetGrade()}");
         }
     }
 }

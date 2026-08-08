@@ -1,6 +1,8 @@
-﻿namespace Csharp_2.Day_5.Employee_13
+﻿using System;
+
+namespace Csharp_2.Day_5.Employee_13
 {
-     class Employee:Person
+     class Employee:Person ,IPrintable
     {
         /*
          * 2. **Employee**
@@ -42,11 +44,18 @@
                     $"Employee Net Salary : {GetNetSalary()}\n ";
         }
 
+        public void PrintDetails()
+        {
+            Console.WriteLine($"Employee Name : {Name} \n" +
+                              $"Employee Salary : {Salary} \n" +
+                              $"Employee Net Salary : {GetNetSalary()}\n ");
+        }
 
 
 
 
- 
+
+
 
 
 

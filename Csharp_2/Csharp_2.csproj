@@ -66,6 +66,7 @@
     <Compile Include="Day_5\Employee_13\Employee.cs" />
     <Compile Include="Day_5\Employee_13\Manager.cs" />
     <Compile Include="Day_5\Employee_13\TestEmployee.cs" />
+    <Compile Include="Day_5\IPrintable.cs" />
     <Compile Include="Day_5\Patient_15\Patient.cs" />
     <Compile Include="Day_5\Patient_15\TestPaient.cs" />
     <Compile Include="Day_5\Person.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="Day_5\Room_12\TestRoom.cs" />
     <Compile Include="Day_5\Student_14\Student.cs" />
     <Compile Include="Day_5\Student_14\TestStudent.cs" />
+    <Compile Include="Day_5\Task1EmplyeeSystem\EmployeeSysstem.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
